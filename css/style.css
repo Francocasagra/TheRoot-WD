@@ -1,0 +1,77 @@
+/*Inicio_Reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@font-face {
+    font-family: "Passion One Regular";
+    src: url(../fuentes/Passion\ One\ Regular.ttf);
+}
+
+@font-face {
+    font-family: "CaviarDreams_BoldItalic";
+    src: url(../fuentes/CaviarDreams_BoldItalic.ttf);
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: "Passion One Regular";
+    font-size: 80px;
+    color: #3d9970;
+    letter-spacing: 0.1em
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: "CaviarDreams_BoldItalic";
+    color: rgb(136, 136, 136);
+    font-size: 16px;
+}
+
+h3 {
+    font-family: "CaviarDreams_BoldItalic";
+    font-size: 18px;
+    color: rgb(172, 172, 172);
+}
+
+/*Fin_Reset*/
+
+/*Grilla*/
+
+#grilla {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "header"
+    "nav_mobile"
+    "main"
+    "footer";
+}
+
+header {
+    grid-area: header;
+}
+
+.nav_mobile {
+    grid-area: nav_mobile;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/*Grilla*/
+

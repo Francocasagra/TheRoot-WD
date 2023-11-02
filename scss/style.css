@@ -1,0 +1,349 @@
+/*Inicio_Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Passion One Regular";
+  src: url(../fuentes/Passion\ One\ Regular.ttf);
+}
+@font-face {
+  font-family: "CaviarDreams_BoldItalic";
+  src: url(../fuentes/CaviarDreams_BoldItalic.ttf);
+}
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Passion One Regular";
+  font-size: 80px;
+  color: #3d9970;
+  letter-spacing: 0.1em;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: "CaviarDreams_BoldItalic";
+  color: rgb(136, 136, 136);
+  font-size: 16px;
+}
+
+h3 {
+  font-family: "CaviarDreams_BoldItalic";
+  font-size: 18px;
+  color: rgb(172, 172, 172);
+}
+
+/*Fin_Reset*/
+/*Grilla*/
+#grilla {
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "header" "nav_mobile" "main" "footer";
+}
+
+header {
+  grid-area: header;
+}
+
+.nav_mobile {
+  grid-area: nav_mobile;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/*Grilla*/
+/*Header_Logo*/
+header {
+  display: flex;
+  flex-direction: column;
+}
+header .banner_inicio {
+  height: 812px;
+  background-image: url(../imagenes/imagenes/encendido-computadora-portatil-gris.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+header .banner_logo {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+header .logo {
+  width: 15rem;
+}
+
+.header .button {
+  display: none;
+}
+
+.header .svg {
+  width: 2em;
+  height: 2em;
+  fill: black;
+}
+
+.header .ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header .li {
+  margin: 0 0.5em;
+}
+
+/*Fin_Header*/
+/*Perfil*/
+.header_perfil p {
+  text-align: start;
+}
+
+.informacion {
+  margin-top: 70px;
+}
+.informacion img {
+  width: 15em;
+  border-radius: 50%;
+}
+.informacion span ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/*Hobbies*/
+.hobbies {
+  height: 270px;
+  background-image: url(../imagenes/imagenes/gimnasio-pesas-suelo.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/*Servicios*/
+.servicios .header_servicios p {
+  text-align: start;
+}
+.servicios .diseno_servicios {
+  margin-top: 3em;
+}
+.servicios .diseno_servicios tr .izquierda {
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  text-align: start;
+}
+.servicios .diseno_servicios tr .derecha {
+  text-align: end;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+}
+.servicios .diseno_servicios th box-icon {
+  background-color: #3d9970;
+  border-radius: 50%;
+}
+
+.ruta_servicios {
+  height: 300px;
+  background-image: url(../imagenes/imagenes/persona-escribiendo-teclado-computadora-noche-generado-ai.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.ruta_servicios .ruta table {
+  height: 10em;
+}
+.ruta_servicios .ruta table .icon box-icon {
+  background-color: #3d9970;
+  border-radius: 50%;
+}
+
+.proyetos .header_proyectos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main_proyectos {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-top: 3em;
+}
+.main_proyectos .logos img {
+  width: 90px;
+}
+
+.contacto {
+  margin-top: 3em;
+}
+
+.contact_form {
+  border-radius: 10px;
+  background-color: #fbfbfb;
+}
+
+input {
+  background-color: #fbfbfb;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #3d9970;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  background-color: #fbfbfb;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #3d9970;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+label {
+  display: block;
+  float: center;
+}
+
+button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #3d9970;
+  border-color: #28664a;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+}
+
+button p {
+  color: #fff;
+}
+
+.formulario span {
+  color: #28664a;
+}
+
+.aviso {
+  font-size: 13px;
+  color: #0e0e0e;
+}
+
+.formulario h1 {
+  font-size: 39px;
+  text-align: letf;
+  padding-bottom: 20px;
+}
+
+.formulario h3 {
+  font-size: 16px;
+  padding-bottom: 30px;
+}
+
+.formulario p {
+  font-size: 14px;
+  color: #0e0e0e;
+}
+
+::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+
+::-webkit-textarea-placeholder {
+  color: #a8a8a8;
+}
+
+.formulario input:focus {
+  outline: 0;
+  border: 1px solid #28664a;
+}
+
+.formulario textarea:focus {
+  outline: 0;
+  border: 1px solid #28664a;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #454645;
+}
+
+.redes_footer {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.copy {
+  display: flex;
+  justify-content: center;
+}
+
+/*Queries*/
+@media screen and (max-width: 480px) {
+  .header .button {
+    display: block;
+    cursor: pointer;
+  }
+  .header .nav {
+    width: 100%;
+    height: 0;
+    pointer-events: none;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .nav.activo {
+    height: 50vh;
+    pointer-events: auto;
+  }
+  .header .ul {
+    flex-direction: column;
+  }
+  .header .li {
+    margin: 1rem 0;
+  }
+}/*# sourceMappingURL=style.css.map */
